@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>iphone 11</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+</head>
+<body>
+
+
+        <div class="nav">
+                <a href="/index.html">Home</a>
+        </div>
+
+
+        <div id="box1" class="box">
+
+                
+        </div>
+
+        <div id="box2" class="box">
+
+                
+        </div>
+
+        <div id="box3" class="box">
+
+                
+        </div>
+
+
+        <div id="box4" class="box">
+
+                
+        </div>
+
+        <div id="box5" class="box">
+
+                
+        </div>
+
+        <div id="box6" class="box"></div>
+
+        <div id="box7" class="box"></div>
+
+        <div id="box8" class="box"></div>
+
+        <div id="box9" class="box"></div>
+
+        <div id="box10" class="box"></div>
+
+       
+
+
+
+
+        
+
+
+
+
+
+        <script >
+
+function elementJS(ids) {
+        var aTag = document.createElement("a");
+        aTag.innerHTML = "name";
+        
+        aTag.setAttribute("class","link-txt");
+        aTag.setAttribute("id","name"+ids);
+
+        document.getElementById('box'+ids).appendChild(aTag);
+
+        var h3 = document.createElement("h3");
+        h3.innerHTML = "price";
+        h3.setAttribute("class","price");
+        h3.setAttribute("id","price"+ids);
+        document.getElementById('box'+ids).appendChild(h3);
+
+        var normalPrice_Ptag = document.createElement("p");
+        
+        normalPrice_Ptag.setAttribute("class","normal-price");
+        normalPrice_Ptag.setAttribute("id","normal-price"+ids);
+        document.getElementById('box'+ids).appendChild(normalPrice_Ptag);
+
+        var discount_Tag = document.createElement("p");
+        
+        discount_Tag.setAttribute("class","discount");
+        discount_Tag.setAttribute("id","discount"+ids);
+        document.getElementById('box'+ids).appendChild(discount_Tag);
+
+
+        var brand_img = document.createElement("img");
+        
+        brand_img.setAttribute("class","brand");
+        brand_img.setAttribute("id","brand"+ids);
+        document.getElementById('box'+ids).appendChild(brand_img);
+
+
+
+
+
+        var divImg = document.createElement("div");
+        divImg.setAttribute("class", "img-box");
+        divImg.setAttribute("id", "img-box-"+ids);
+        document.getElementById('box'+ids).appendChild(divImg);
+
+        // phone img
+        var img = document.createElement("img");
+        img.setAttribute("class","phone-img");
+        img.setAttribute("id", "img"+ids);
+        document.getElementById("img-box-"+ids).appendChild(img);
+
+
+        var divLink = document.createElement("div");
+        divLink.setAttribute("class", "link-button");
+        divLink.setAttribute("id", "link-button-"+ids);
+
+        document.getElementById('box'+ids).appendChild(divLink);
+
+        var aLink = document.createElement("a");
+        aLink.innerHTML = "visit website";
+        
+
+        aLink.setAttribute("id","link"+ids);
+
+        document.getElementById('link-button-'+ids).appendChild(aLink);
+}
+
+var i =1;
+for (i=1 ; i<11; i++){
+        elementJS(i);
+}
+
+
+
+function phoneData(idIndex, jsonDataIndex ,fileFormat, brand ,normalPrice, name ,img) {
+  
+  document.getElementById('price'+idIndex).innerHTML = fileFormat.links[jsonDataIndex].price  ;
+  var JsonData = fileFormat.links[jsonDataIndex].price ;
+  
+  if (brand == "a") {
+   var JsonDataInt = JsonData.slice(1);
+   var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
+   var differenceInPrice = normalPrice - ReplaceComma ;
+
+   var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+   var roundedPercentValue = Math.round(percentValue) ;
+
+   
+  }
+
+  if (brand == "w"){
+      var ReplaceComma = parseFloat(JsonData.replace(/,/g, ''));
+      var differenceInPrice = normalPrice - ReplaceComma ;
+
+      var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+      var roundedPercentValue = Math.round(percentValue) ;
+
+      document.getElementById('price'+idIndex).innerHTML = "$" + fileFormat.links[jsonDataIndex].price  ;   
+  }
+
+
+    
+
+ 
+  
+  
+  
+  document.getElementById('discount'+idIndex).innerHTML = roundedPercentValue + "%" ;
+  document.getElementById('normal-price'+idIndex).innerHTML = normalPrice ;
+  document.getElementById('img'+idIndex).src = img ;
+  document.getElementById('link'+idIndex).href = fileFormat.links[jsonDataIndex].link ;
+  document.getElementById('name'+idIndex).innerHTML = name ;
+
+  if (roundedPercentValue == 0) {
+        
+        document.getElementById("normal-price"+idIndex).style.display = "none" ;
+        document.getElementById("discount"+idIndex).style.display = "none" ;
+  }
+  
+  
+  
+
+}
+
+fetch('/json/usa/apple_amazon_usa.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(1, 25 , json , "a" ,699 , "iPhone 11 (Purple, 64 GB)" , "https://www.amazon.com/images/I/71xn9bCRfhL.jpg");
+     phoneData(2, 26 , json , "a" ,699 , "iPhone 11 (Black, 64 GB)" , "https://www.amazon.com/images/I/71iO2R+CLjL.jpg");
+     phoneData(3, 27 , json, "a" , 699 , "iPhone 11 (Green, 64 GB)" , "https://www.amazon.com/images/I/71Dh+NR7ivL.jpg");
+     phoneData(4, 28 , json , "a" , 699 , "Apple iPhone 11 (White, 256 GB)" , "https://www.amazon.com/images/I/71kZfQA-Y7L.jpg");
+  })
+
+  fetch('/json/usa/walmart.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(5, 16 , json ,"w", 699 , "Apple iPhone 11 (Black, 64 GB)" , "https://i5.walmartimages.com/asr/eea59ef4-4f1b-475a-8389-11e08e2c0345_2.f889569839816ae694a4ab6475369fbc.png?odnWidth=612&odnHeight=612&odnBg=ffffff");
+
+     phoneData(6, 17 , json ,"w", 699 , "iPhone 11 Pro (Black, 64 GB)" , "https://i5.walmartimages.com/asr/eea59ef4-4f1b-475a-8389-11e08e2c0345_2.f889569839816ae694a4ab6475369fbc.png?odnWidth=612&odnHeight=612&odnBg=ffffff");
+
+  })  
+       
+                
+
+
+
+
+
+
+
+
+
+        </script>
+
+        <script src="/js/main.js"></script>
+        
+
+</body>
+</html>
+
+

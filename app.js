@@ -1,10 +1,6 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("search-input").style.display = "none";
-  
-}
+
 
 
 function filterFunction() {
@@ -21,6 +17,10 @@ function filterFunction() {
       a[i].style.display = "none";
     }
   }
+
+
+
+
 }
 
 
@@ -50,16 +50,30 @@ function showMoreS() {
 
 
 
-
-
-
-
    
+function myFunction() {
 
+ // document.getElementById("myDropdown").classList.toggle("show");
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  
+  
+  
+}
   
 
   
 
+function cancle(){
+  document.getElementById("myDropdown").style.display = "none";
+ 
+  
+}
 
 
 

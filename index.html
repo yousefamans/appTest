@@ -23,7 +23,7 @@
 
     </head>    
 
-    <body>
+    <body onclick="noneDisplay()">
 
 
     	
@@ -50,7 +50,7 @@
 
       <h1 id="test">..</h1>
 
-
+  <div onclick="noneDisplay()">
 
 		<div class="welcome">
 			<h1 class="welcome-txt">Track prices of your fovourite gizmos !!</h1>
@@ -61,11 +61,14 @@
 
     		<div  class="search-elements2">
     			<a class="dropbtn" id="search-btn">Search</a>
-    		</div> 
+    		</div>
+
+
 
     		<div class="content-pos">  
 
 	    		<div id="myDropdown" class="dropdown-content">
+	    			<button id="cancle-btn" onclick="cancle()">cancle</button> 
 			    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
 			    <a href="/templates/apple/iphone-se-2020.html">iphone se 2020</a>
 			    <a href="/templates/apple/iphone-11.html">iphone 11</a>
@@ -74,6 +77,7 @@
 			    <a href="/templates/apple/iphone-11-pro.html">iphone 11 pro</a>
 			    <a href="#support">iphone Xr</a>
 			    <a href="/templates/samsung/samsung-a71.html">Samsung A71</a>
+
 			    <a href="#about">iphone Xs</a>
 			    <a href="#base">iphone 11 pro max</a>
 			    <a href="#blog">Samsung S20 Ultra</a>
@@ -88,7 +92,7 @@
 		</div>
 
 
-		
+	</div>	
 
 
 		<!-- top deals -->

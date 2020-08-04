@@ -2,113 +2,193 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Samsung A31</title>
-	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <title>iphone 8</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
 
 </head>
 <body>
 
 
-	<div class="nav">
-		<a href="index.html">Home</a>
-	</div>
-
-	<img class="flipkart" width="400" src="https://cdn.freebiesupply.com/logos/large/2x/flipkart-logo-png-transparent.png">
-
-	<div class="box">
-
-		<a class="link-txt" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">iPhone SE (Black, 64 GB)
-        </a>
-        <h3 class="price">price</h3>
-        <div class='img-box'>
-        	<img class="phone-img" width="250" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png">
+        <div class="nav">
+                <a href="/index.html">Home</a>
         </div>
-        <div class="link-button">
-        	<a href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">visit website</a>
-        </div>
+
+        <p class="search-results">Search results</p>
+
+
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+        <div id="box10" class="box"></div>
+        <div id="box11" class="box"></div>
+        <div id="box12" class="box"></div>
+        <div id="box13" class="box"></div>
+        <div id="box14" class="box"></div>
+        <div id="box15" class="box"></div>
+
+      
+        <script >
+
+function elementJS(ids) {
+        var aTag = document.createElement("a");
+        aTag.innerHTML = "name";
+        
+        aTag.setAttribute("class","link-txt");
+        aTag.setAttribute("id","name"+ids);
+
+        document.getElementById('box'+ids).appendChild(aTag);
+
+        var price_value = document.createElement("p");
+        price_value.innerHTML = "price";
+        price_value.setAttribute("class","price-value");
+        price_value.setAttribute("id","price"+ids);
+        document.getElementById('box'+ids).appendChild(price_value);
+
+        var normalPrice_Ptag = document.createElement("p");
+        
+        normalPrice_Ptag.setAttribute("class","normal-price");
+        normalPrice_Ptag.setAttribute("id","normal-price"+ids);
+        document.getElementById('box'+ids).appendChild(normalPrice_Ptag);
+
+        var discount_Tag = document.createElement("p");
+        
+        discount_Tag.setAttribute("class","discount");
+        discount_Tag.setAttribute("id","discount"+ids);
+        document.getElementById('box'+ids).appendChild(discount_Tag);
+
+
+        var brand_img = document.createElement("img");
+        
+        brand_img.setAttribute("class","brand");
+        brand_img.setAttribute("id","brand"+ids);
+        document.getElementById('box'+ids).appendChild(brand_img);
+
+        var divImg = document.createElement("div");
+        divImg.setAttribute("class", "img-box");
+        divImg.setAttribute("id", "img-box-"+ids);
+        document.getElementById('box'+ids).appendChild(divImg);
+
+        // phone img
+        var img = document.createElement("img");
+        img.setAttribute("class","phone-img");
+        img.setAttribute("id", "img"+ids);
+        document.getElementById("img-box-"+ids).appendChild(img);
+
+
+        var divLink = document.createElement("div");
+        divLink.setAttribute("class", "link-button");
+        divLink.setAttribute("id", "link-button-"+ids);
+
+        document.getElementById('box'+ids).appendChild(divLink);
+
+        var aLink = document.createElement("a");
+        aLink.innerHTML = "visit website";
+        
+
+        aLink.setAttribute("id","link"+ids);
+
+        document.getElementById('link-button-'+ids).appendChild(aLink);
+}
+
+var i =1;
+for (i=1 ; i<16; i++){
+        elementJS(i);
+}
+
+
+
+function phoneData(idIndex, jsonDataIndex ,fileFormat, brand ,normalPrice, name ,img) {
+  
+  
+  var JsonData = fileFormat.links[jsonDataIndex].price ;
+  
+  var JsonDataInt = JsonData.slice(1);
+  var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
+  var differenceInPrice = normalPrice - ReplaceComma ;
+
+  var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+  var roundedPercentValue = Math.round(percentValue) ;
+
+  if (brand == "a") {
+      document.getElementById('price'+idIndex).innerHTML = JsonData.slice(0,-3)  ;
+      document.getElementById('brand'+idIndex).src = "###########https://cdn.clipart.email/997b00858c031976500e16c850dd3626_transparent-background-amazonin-logo-png_350-350.png"  ;
+      document.getElementById("brand"+idIndex).style.top = "80px";
+
+   
+  }
+
+  if (brand == "f"){
+     document.getElementById('price'+idIndex).innerHTML = fileFormat.links[jsonDataIndex].price  ;    
+     document.getElementById('brand'+idIndex).src = "#######https://cdn.freebiesupply.com/logos/large/2x/flipkart-logo-png-transparent.png"  ;
+
+
+        
+  }
+  
+  document.getElementById('discount'+idIndex).innerHTML = roundedPercentValue + "% <span class="+"off"+">Off </span>" ;
+  document.getElementById('normal-price'+idIndex).innerHTML = "<s>"+normalPrice+" ₹</s>" ;
+  document.getElementById('img'+idIndex).src = img ;
+  document.getElementById('link'+idIndex).href = fileFormat.links[jsonDataIndex].link ;
+  document.getElementById('name'+idIndex).innerHTML = name ;
+
+  document.getElementById("img"+idIndex).style.width = "110px";
+  document.getElementById("img"+idIndex).style.left = "40px";
+
+  if (roundedPercentValue == 0) {
+        
+        document.getElementById("normal-price"+idIndex).style.display = "none" ;
+        document.getElementById("discount"+idIndex).style.display = "none" ;
+  }
+  
+  
+  
+
+}
+
+fetch('/json/india/amazon_in.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(1, 41 , json , "a" ,  23999 , "Samsung A31 (Black, 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/81erkgYf1tL._SL1500_.jpg");
+     phoneData(2, 42 , json , "a" ,  19999 , "Samsung A21s (White, 64 GB)" , "https://images-na.ssl-images-amazon.com/images/I/81-5NsP8laL._SL1500_.jpg");
+     phoneData(3, 43 , json , "a" ,  17999 , "Samsung A21s (Blue, 64 GB)" , "https://images-na.ssl-images-amazon.com/images/I/81-5NsP8laL._SL1500_.jpg");
+     phoneData(4, 44 , json , "a" ,  17999 , "Samsung A21s (Black, 64 GB)" , "https://images-na.ssl-images-amazon.com/images/I/81-5NsP8laL._SL1500_.jpg");
+     phoneData(5, 45 , json , "a" ,  19999 , "Samsung A21s (Black, 64 GB)" , "https://images-na.ssl-images-amazon.com/images/I/81-5NsP8laL._SL1500_.jpg");
+     phoneData(6, 6 , json , "a" ,  0 , "Samsung (,  GB)" , "");   
+    
+
+
+     
+  })
+
+  fetch('/json/india/flipkart.json')
+  .then(res => res.json())
+  .then((json) => {
+
+      phoneData(8, 72 , json , "f" ,  23999 , "Samsung A31 (Blue, 128 GB)" , "https://rukminim1.flixcart.com/image/416/416/kamtsi80/mobile/z/c/w/samsung-galaxy-a31-sm-a315fzbwins-original-imafs5p5kwscdurq.jpeg?q=70");
+      phoneData(9, 73 , json , "f" ,  23999 , "Samsung A31 (Black, 128 GB)" , "https://rukminim1.flixcart.com/image/416/416/kamtsi80/mobile/z/c/w/samsung-galaxy-a31-sm-a315fzbwins-original-imafs5p5kwscdurq.jpeg?q=70");
+      phoneData(10, 74 , json , "f" ,  17999 , "Samsung A21s (Blue, 64 GB)" , "https://rukminim1.flixcart.com/image/416/416/kbi9h8w0/mobile/q/2/x/samsung-galaxy-a21s-sm-a217fzbfins-original-imafsuyataz9hpmz.jpeg?q=70");
+      phoneData(11, 75 , json , "f" ,  17999 , "Samsung A21s (Black, 64 GB)" , "https://rukminim1.flixcart.com/image/416/416/kbi9h8w0/mobile/q/2/x/samsung-galaxy-a21s-sm-a217fzbfins-original-imafsuyataz9hpmz.jpeg?q=70");
+      phoneData(12, 4 , json , "f" ,  0 , "Samsung (,  GB)" , "");
+      phoneData(13, 5 , json , "f" ,  0 , "Samsung (,  GB)" , "");
+        
+  
+
+        
+
+  })  
        
-	</div>
-
-	<!-- red-->
-
-	<div class="box">
-
-		<a class="link-txt" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">iPhone SE (Red, 64 GB)
-        </a>
-        <h3 class="price">price</h3>
-        <div class='img-box'>
-        	<img id="se-red" class="phone-img"    width="280"     src="https://bludiode.com/24692-large_default/apple-iphone-se-2020-single-sim-e-sim-128gb-lte-red-hk-spec-mxd22zp-a.jpg">
-        </div>
-        <div class="link-button">
-        	<a href="https://www.flipkart.com/apple-iphone-se-red-64-gb/p/itm832dd5963a08d">visit website</a>
-        </div>
-       
-	</div>
-
-	<!-- white -->
-
-	<div class="box">
-
-		<a class="link-txt" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">iPhone SE (White, 64 GB)
-        </a>
-        <h3 class="price">price</h3>
-        <div class='img-box'>
-        	<img class="phone-img" width="250" src="https://www.proximus.be/dam/jcr:448ca563-4b4a-4095-beff-5ed7a2bab964/cdn/sites/iportal/images/products/device/a/apple-iphone-se-2020-64gb-white/detail/apple-iphone-se-2020-64gb-white-XS-3~2020-04-17-05-27-31~cache.png">
-        </div>
-        <div class="link-button">
-        	<a href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">visit website</a>
-        </div>
-       
-	</div>
-
-	<!-- amazon-->
-
-	<img class="amazon" src="https://cdn.clipart.email/997b00858c031976500e16c850dd3626_transparent-background-amazonin-logo-png_350-350.png">
-
-	<div class="box">
-
-		<a class="link-txt" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">iPhone SE (Red, 64 GB)
-        </a>
-        <h3 class="price">price</h3>
-        <div class='img-box'>
-        	<img class="phone-img" width="250" src="https://bludiode.com/24692-large_default/apple-iphone-se-2020-single-sim-e-sim-128gb-lte-red-hk-spec-mxd22zp-a.jpg">
-        </div>
-        <div class="link-button">
-        	<a href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">visit website</a>
-        </div>
-       
-	</div>
-
-
-	<div class="box">
-
-		<a class="link-txt" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">iPhone SE (White, 64 GB)
-        </a>
-        <h3 class="price">price</h3>
-        <div class='img-box'>
-        	<img class="phone-img" width="250" src="https://www.proximus.be/dam/jcr:448ca563-4b4a-4095-beff-5ed7a2bab964/cdn/sites/iportal/images/products/device/a/apple-iphone-se-2020-64gb-white/detail/apple-iphone-se-2020-64gb-white-XS-3~2020-04-17-05-27-31~cache.png">
-        </div>
-        <div class="link-button">
-        	<a href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">visit website</a>
-        </div>
-       
-	</div>
-
-
-	<div class="box">
-
-		<a class="link-txt" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">iPhone SE (Black, 64 GB)
-        </a>
-        <h3 class="price">price</h3>
-        <div class='img-box'>
-        	<img class="phone-img" width="250" src="https://www.proximus.be/dam/jcr:448ca563-4b4a-4095-beff-5ed7a2bab964/cdn/sites/iportal/images/products/device/a/apple-iphone-se-2020-64gb-white/detail/apple-iphone-se-2020-64gb-white-XS-3~2020-04-17-05-27-31~cache.png">
-        </div>
-        <div class="link-button">
-        	<a href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d">visit website</a>
-        </div>
-       
-	</div>
+                
 
 
 
@@ -118,8 +198,16 @@
 
 
 
-	<script src="/js/main.js"></script>
+        </script>
+
+        <script src="/js/main.js"></script>
+        
 
 </body>
 </html>
+
+
+
+
+
 
