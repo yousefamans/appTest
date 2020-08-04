@@ -25,11 +25,11 @@
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
 	border-radius: 10px;
 	margin-top: 40px;
-	margin-left: 20px;
+	margin-left: 2px;
 	margin-right: 5px;
 	width: 95%;
-	height: 300px;
-	background-color: rgb(255,255,255);
+	height: 50%;
+	background-color: rgb(55,255,255);
 	font-size: 20px;
 	padding-bottom: 30px;
 }
