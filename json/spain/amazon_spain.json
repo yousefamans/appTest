@@ -28,15 +28,17 @@
   {
    "link": "https://www.amazon.es/Apple-iPhone-Plus-Smartphone-Gris/dp/B075RBM8KW?ref_=ast_sto_dp",
    "name": "Apple iPhone 8 Plus (64 GB) - Gris Espacial",
-   "price": ",81 €"
+   "price": "1,81 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-Smartphone-Camara-Color/dp/B075RB145Y?ref_=ast_sto_dp",
-   "name": "Apple iPhone X (de 64GB) - Gris espacial"
+   "name": "Apple iPhone X (de 64GB) - Gris espacial",
+   "price": "1,81 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-64GB-Plata-MQAD2QL/dp/B075R9SDZ9?ref_=ast_sto_dp",
-   "name": "Apple iPhone X (de 64GB) - Plata"
+   "name": "Apple iPhone X (de 64GB) - Plata",
+   "price": "1,81 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-XR-Smartphone-6-1-amarillo/dp/B07J2CRSVZ?ref_=ast_sto_dp",
@@ -75,11 +77,13 @@
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-XS-Smartphone-espacial/dp/B07HLDMZJZ?ref_=ast_sto_dp",
-   "name": "Apple iPhone XS (de 64GB) - Gris espacial"
+   "name": "Apple iPhone XS (de 64GB) - Gris espacial",
+   "price": "1,81 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-XS-Smartphone-5-8/dp/B07J6HZT43?ref_=ast_sto_dp",
-   "name": "Apple iPhone XS (de 64GB) - Gris espacial"
+   "name": "Apple iPhone XS (de 64GB) - Gris espacial",
+   "price": "1,81 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-11-Pro-64-GB/dp/B07XS2ND7L?ref_=ast_sto_dp",
@@ -124,32 +128,32 @@
   {
    "link": "https://www.amazon.es/Apple-iPhone-11-Pro-64-GB/dp/B07XS3ZX16?ref_=ast_sto_dp",
    "name": "Apple iPhone 11 Pro (64 GB) - de en Verde Noche",
-   "price": "1.029,00 €"
+   "price": "1029,00 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-11-Pro-256-GB/dp/B07XS2ND7R?ref_=ast_sto_dp",
    "name": "Apple iPhone 11 Pro (256 GB) - Gris Espacial",
-   "price": "1.229,00 €"
+   "price": "1229,00 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-11-Pro-256-GB/dp/B07XS2ZQZ6?ref_=ast_sto_dp",
    "name": "Apple iPhone 11 Pro (256 GB) - Oro",
-   "price": "1.229,00 €"
+   "price": "1229,00 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-11-Pro-256-GB/dp/B07XS4NHMR?ref_=ast_sto_dp",
    "name": "Apple iPhone 11 Pro (256 GB) - Plata",
-   "price": "1.229,00 €"
+   "price": "1229,00 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-11-Pro-256-GB/dp/B07XS48L9C?ref_=ast_sto_dp",
    "name": "Apple iPhone 11 Pro (256 GB) - de en Verde Noche",
-   "price": "1.229,00 €"
+   "price": "1229,00 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-Pro-Max-64-GB/dp/B07XS57CGZ?ref_=ast_sto_dp",
    "name": "Apple iPhone 11 Pro MAX (64 GB) - Plata",
-   "price": "1.159,00 €"
+   "price": "1159,00 €"
   },
   {
    "link": "https://www.amazon.es/Apple-iPhone-Pro-Max-64-GB/dp/B07XS52RN3?ref_=ast_sto_dp",
@@ -345,10 +349,12 @@
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S20-Ultra-Smartphone/dp/B084K6P9HP?ref_=ast_sto_dp",
-   "name": "Samsung Galaxy S20 Ultra 5G - Smartphone 6.9\" Dynamic AMOLED (12GB RAM, 128GB ROM, cámara 108MP gran angular, Octa-core Exynos 990, 5000mAh batería, carga ultra rápida) Cosmic Black [Versión española]"
+   "name": "Samsung Galaxy S20 Ultra 5G - Smartphone 6.9\" Dynamic AMOLED (12GB RAM, 128GB ROM, cámara 108MP gran angular, Octa-core Exynos 990, 5000mAh batería, carga ultra rápida) Cosmic Black [Versión española]",
+   "price": "1.099,90 €"
   },
   {
-   "link": "https://www.amazon.es/Samsung-Galaxy-S20-Ultra-Smartphone/dp/B084K6P9HP?ref_=ast_sto_dp"
+   "link": "https://www.amazon.es/Samsung-Galaxy-S20-Ultra-Smartphone/dp/B084K6P9HP?ref_=ast_sto_dp",
+   "price": "1.099,90 €"
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S20-Ultra-5G/dp/B084DPKKPR/ref=sr_1_5?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=samsung+s20&qid=1595503842&sr=8-5",
@@ -357,7 +363,8 @@
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S10e-Smartphone-Pantalla/dp/B07NDDLVZY?ref_=ast_sto_dp",
-   "name": "Samsung Galaxy S10e - Smartphone (128GB, Dual SIM, Pantalla 5.8 \"Full HD + Dynamic AMOLED, 3100mAh (típico)), Negro (Prism Black), [ Versión Española]"
+   "name": "Samsung Galaxy S10e - Smartphone (128GB, Dual SIM, Pantalla 5.8 \"Full HD + Dynamic AMOLED, 3100mAh (típico)), Negro (Prism Black), [ Versión Española]",
+   "price": "1,90 €"
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S10-Smartphone-Version/dp/B07NWWPZYQ?ref_=ast_sto_dp",
@@ -366,7 +373,8 @@
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S10-Smartphone-Wireless/dp/B07NDD7W23?ref_=ast_sto_dp",
-   "name": "Samsung Galaxy S10+ - Smartphone de 6.4\" QHD+ Curved Dynamic AMOLED, 16 MP, Exynos 9820, Wireless & Fast & Reverse Charging, 128 GB, Prisma Negro (Prism Black)"
+   "name": "Samsung Galaxy S10+ - Smartphone de 6.4\" QHD+ Curved Dynamic AMOLED, 16 MP, Exynos 9820, Wireless & Fast & Reverse Charging, 128 GB, Prisma Negro (Prism Black)",
+   "price": "612,60 €"
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S10-Smartphone-Wireless/dp/B07NWV9SKS?ref_=ast_sto_dp",
@@ -380,7 +388,8 @@
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-Plus-Smartphone-Bluetooth/dp/B079XF3BYL?ref_=ast_sto_dp",
-   "name": "Samsung SM-G965FZBDPHE Smartphone Samsung Galaxy S9 Plus (6.2\", Wi-Fi, Bluetooth, Octa-core 4x2.7 GHz, 64 GB, 6 GB RAM, Dual SIM, 12 MP, Android 8.0 Oreo), Azul - Versión Española"
+   "name": "Samsung SM-G965FZBDPHE Smartphone Samsung Galaxy S9 Plus (6.2\", Wi-Fi, Bluetooth, Octa-core 4x2.7 GHz, 64 GB, 6 GB RAM, Dual SIM, 12 MP, Android 8.0 Oreo), Azul - Versión Española",
+   "price": "1,90 €"
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S10-Lite-Snapdragon8150/dp/B083KLB9M2?ref_=ast_sto_dp",
@@ -389,14 +398,17 @@
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-S10-Lite-Snapdragon8150/dp/B083H74GRC?ref_=ast_sto_dp",
-   "name": "Samsung Galaxy S10 Lite - Smartphone de 6.7\" FHD+ (4G, 8GB RAM, 128GB ROM, cámara trasera 48MP+12MP(UW)+5MP(Macro)+5MP, cámara frontal 32MP, Octa-core Snapdragon8150), Prism Black [Versión española]"
+   "name": "Samsung Galaxy S10 Lite - Smartphone de 6.7\" FHD+ (4G, 8GB RAM, 128GB ROM, cámara trasera 48MP+12MP(UW)+5MP(Macro)+5MP, cámara frontal 32MP, Octa-core Snapdragon8150), Prism Black [Versión española]",
+   "price": "1,90 €"
   },
   {
-   "link": "https://www.amazon.es/Samsung-Galaxy-S10-Lite-Snapdragon8150/dp/B083H74GRC?ref_=ast_sto_dp"
+   "link": "https://www.amazon.es/Samsung-Galaxy-S10-Lite-Snapdragon8150/dp/B083H74GRC?ref_=ast_sto_dp",
+   "price": "1,90 €"
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-Note-Lite-Smartphone/dp/B083KKNQNZ?ref_=ast_sto_dp",
-   "name": "Samsung Galaxy Note 10 Lite - Smartphone de 6.7\" FHD+ (4G, Dual SIM, 6GB RAM, 128GB ROM, cámara trasera 12MP(W)+12MP(UW)+12MP, cámara frontal 32MP, Octacore Exynos 9810), Aura Black [Versión española]"
+   "name": "Samsung Galaxy Note 10 Lite - Smartphone de 6.7\" FHD+ (4G, Dual SIM, 6GB RAM, 128GB ROM, cámara trasera 12MP(W)+12MP(UW)+12MP, cámara frontal 32MP, Octacore Exynos 9810), Aura Black [Versión española]",
+   "price": "1,90 €"
   },
   {
    "link": "https://www.amazon.es/Samsung-Galaxy-Note-Lite-Smartphone/dp/B083KKVVTL?ref_=ast_sto_dp",

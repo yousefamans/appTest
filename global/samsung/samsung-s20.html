@@ -1,0 +1,287 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>iphone 11 Pro Max</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+</head>
+<body>
+
+
+        <div class="nav">
+                <a href="/index.html"><img class="back" src="https://img.icons8.com/fluent/48/000000/back.png"/></a>
+        </div>
+
+
+        <p class="search-results">Search Results</p>
+
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+        <div id="box10" class="box"></div>
+        <div id="box11" class="box"></div>
+        <div id="box12" class="box"></div>
+        <div id="box13" class="box"></div>
+        <div id="box14" class="box"></div>
+        <div id="box15" class="box"></div>
+        <div id="box16" class="box"></div>
+       
+      
+
+
+
+
+        <script >
+
+
+
+function elementJS(ids) {
+        var aTag = document.createElement("a");
+        aTag.innerHTML = "name";
+        
+        aTag.setAttribute("class","link-txt");
+        aTag.setAttribute("id","name"+ids);
+
+        document.getElementById('box'+ids).appendChild(aTag);
+
+        var price_value = document.createElement("p");
+        price_value.innerHTML = "price";
+        price_value.setAttribute("class","price-value");
+        price_value.setAttribute("id","price"+ids);
+        document.getElementById('box'+ids).appendChild(price_value);
+
+        var normalPrice_Ptag = document.createElement("p");
+        
+        normalPrice_Ptag.setAttribute("class","normal-price");
+        normalPrice_Ptag.setAttribute("id","normal-price"+ids);
+        document.getElementById('box'+ids).appendChild(normalPrice_Ptag);
+
+        var discount_Tag = document.createElement("p");
+        
+        discount_Tag.setAttribute("class","discount");
+        discount_Tag.setAttribute("id","discount"+ids);
+        document.getElementById('box'+ids).appendChild(discount_Tag);
+
+
+        var brand_img = document.createElement("img");
+        
+        brand_img.setAttribute("class","brand");
+        brand_img.setAttribute("id","brand"+ids);
+        document.getElementById('box'+ids).appendChild(brand_img);
+
+
+        var divImg = document.createElement("div");
+        divImg.setAttribute("class", "img-box");
+        divImg.setAttribute("id", "img-box-"+ids);
+        document.getElementById('box'+ids).appendChild(divImg);
+
+        // phone img
+        var img = document.createElement("img");
+        img.setAttribute("class","phone-img");
+        img.setAttribute("id", "img"+ids);
+        document.getElementById("img-box-"+ids).appendChild(img);
+
+
+        var divLink = document.createElement("div");
+        divLink.setAttribute("class", "link-button");
+        divLink.setAttribute("id", "link-button-"+ids);
+
+        document.getElementById('box'+ids).appendChild(divLink);
+
+        var aLink = document.createElement("a");
+        aLink.innerHTML = "visit website";
+        
+
+        aLink.setAttribute("id","link"+ids);
+
+        document.getElementById('link-button-'+ids).appendChild(aLink);
+
+        document.getElementById("box"+ids).style.height = "280px";
+        document.getElementById("box"+ids).style.width = "780px";
+        document.getElementById("img-box-"+ids).style.width = "220px";
+        document.getElementById("img-box-"+ids).style.height = "280px";
+        document.getElementById("img"+ids).style.height = "250px";
+}
+
+var i =1;
+for (i=1 ; i<17; i++){
+        elementJS(i);
+}
+
+
+
+
+function phoneData(idIndex, jsonDataIndex ,fileFormat, brand ,normalPrice, name ,img) {
+  
+  document.getElementById('price'+idIndex).innerHTML = fileFormat.links[jsonDataIndex].price  ;
+  document.getElementById('normal-price'+idIndex).innerHTML = "<s>$ "+normalPrice+"</s>" ;
+  var JsonData = fileFormat.links[jsonDataIndex].price ;
+  
+  if (brand == "a") {
+   var JsonDataInt = JsonData.slice(1);
+   var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
+   var differenceInPrice = normalPrice - ReplaceComma ;
+
+   var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+   var roundedPercentValue = Math.round(percentValue) ;
+   document.getElementById('brand'+idIndex).src = "/img/amazon.jpg"  ;
+
+
+   
+  }
+
+
+   if (brand == "e") {
+   var JsonDataInt = JsonData.slice(4);
+   var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
+   var differenceInPrice = normalPrice - ReplaceComma ;
+
+   var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+   var roundedPercentValue = Math.round(percentValue) ;
+   document.getElementById('brand'+idIndex).src = "/img/ebay.jpg"  ;
+   document.getElementById('brand'+idIndex).style.width = "90px"  ;
+   document.getElementById('brand'+idIndex).style.left = "440px"  ;
+   
+
+
+   if(JsonData.slice(0,2) == "US"){
+     document.getElementById('price'+idIndex).innerHTML = JsonData.slice(3)  ;
+     document.getElementById('normal-price'+idIndex).innerHTML = "<s>$ "+normalPrice+"</s>" ; 
+   
+   }else if (JsonData.slice(0,3) == "GBP"){
+     document.getElementById('price'+idIndex).innerHTML = " £ " + JsonData.slice(4)  ;
+     document.getElementById('normal-price'+idIndex).innerHTML = "<s> £"+normalPrice+"</s>" ;
+   
+   }else if (JsonData.slice(0,3) == "EUR"){
+      document.getElementById('price'+idIndex).innerHTML =  JsonData.slice(4) + " €" ;
+      document.getElementById('normal-price'+idIndex).innerHTML = "<s> "+normalPrice+" €</s>" 
+   }
+
+ }
+
+  if (brand == "w"){
+      var ReplaceComma = parseFloat(JsonData.replace(/,/g, ''));
+      var differenceInPrice = normalPrice - ReplaceComma ;
+
+      var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+      var roundedPercentValue = Math.round(percentValue) ;
+
+      document.getElementById('price'+idIndex).innerHTML = "$" + fileFormat.links[jsonDataIndex].price  ;
+      document.getElementById('brand'+idIndex).src = "/img/walmart.jpg"  ;
+      document.getElementById('brand'+idIndex).style.width = "80px"  ;
+
+
+  }
+
+
+    
+
+ 
+  
+  
+  
+  document.getElementById('discount'+idIndex).innerHTML = roundedPercentValue + "%" ;
+  
+  document.getElementById('img'+idIndex).src = img ;
+  document.getElementById('link'+idIndex).href = fileFormat.links[jsonDataIndex].link ;
+  document.getElementById('name'+idIndex).innerHTML = name ;
+
+  if (roundedPercentValue == 0) {
+        
+        document.getElementById("normal-price"+idIndex).style.display = "none" ;
+        document.getElementById("discount"+idIndex).style.display = "none" ;
+  }
+  
+}
+
+
+
+
+
+fetch('/json/usa/amazon.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(7, 0 , json , "a" ,  720 , "Samsung S20 (Blue, 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/71IX75joWjL._AC_SL1500_.jpg");
+     phoneData(9, 2 , json , "a" ,  999 , "Samsung S20 5G (Grey, 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/61nSb8Jn7oL._AC_SL1500_.jpg");
+     phoneData(8, 3 , json , "a" ,  800 , "Samsung S20 (Blue, 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/61nSb8Jn7oL._AC_SL1500_.jpg");
+     phoneData(10, 4 , json , "a" ,  900 , "Samsung S20 Plus (Black, 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/61gCU8NtVyL._AC_SL1000_.jpg");
+     phoneData(11, 5 , json , "a" ,  1250 , "Samsung S20 Plus 5G (Grey , 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/71rBQ6ZikCL._AC_SL1500_.jpg");
+    
+  })
+
+
+fetch('/json/global/ebay.json')
+.then(res => res.json())
+.then((json) => {
+
+
+   phoneData(6, 42 , json ,"e", 599 , "Samsung S20 (Grey/Blue, 128 GB)" , "https://i.ebayimg.com/images/g/-NEAAOSwQJ9e0VsQ/s-l1600.jpg");
+
+   phoneData(5, 43 , json ,"e", 799 , "Samsung S20 (All Colors, 128 GB)" , "https://i.ebayimg.com/images/g/oUcAAOSwQcpe8jm8/s-l1600.jpg");
+
+   phoneData(3, 44 , json ,"e", 599 , "Samsung S20 5G (All colors, 128 GB)" , "https://i.ebayimg.com/images/g/GlwAAOSwubZewV2P/s-l500.jpg");
+
+   phoneData(4, 45 , json ,"e", 799 , "Samsung S20 + (All colors, 128 GB)" , "https://i.ebayimg.com/images/g/iGEAAOSwz2BeRtrX/s-l1600.jpg");
+    
+   phoneData(2, 46 , json ,"e", 799 , "Samsung S20 + (All colors, 128 GB)" , "https://i.ebayimg.com/images/g/3aUAAOSwlRZe0VsB/s-l1600.jpg");   
+
+})  
+
+fetch('/json/usa/walmart.json')
+.then(res => res.json())
+.then((json) => {
+
+
+   phoneData(16, 46  , json ,"w", 999 , "Samsung S20 (Grey, 128 GB)" , "https://i5.walmartimages.com/asr/9493f266-7e88-4bf9-b9b9-436ff2bce1d9_1.5db39ae14c4219891e3f3015b5ddcb15.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff");
+
+  
+
+   phoneData(15, 48 , json ,"w", 899 , "Samsung S20 (Gray, 128 GB)" , "https://i5.walmartimages.com/asr/e60556b7-3b2a-4af9-85ac-35a7f1762510_1.950608f2928704dbe95f9630a0981611.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff");
+
+   phoneData(14, 49 , json ,"w", 800 , "Samsung S20 (Blue, 128 GB)" , "https://i5.walmartimages.com/asr/cf879ede-7ada-4e05-8220-474698b60bbe_1.441e1e551d5e56a2c26bc7848ea122b6.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff");
+
+   phoneData(1, 50 , json ,"w", 999 , "Samsung S20 5G (Gray, 128 GB)" , "https://i5.walmartimages.com/asr/e60556b7-3b2a-4af9-85ac-35a7f1762510_1.950608f2928704dbe95f9630a0981611.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff");
+
+   phoneData(13, 51 , json ,"w", 999 , "Samsung S20 5G (Gray, 128 GB)" , "https://i5.walmartimages.com/asr/e60556b7-3b2a-4af9-85ac-35a7f1762510_1.950608f2928704dbe95f9630a0981611.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=fffff");
+
+   phoneData(12, 52 , json ,"w", 1250 , "Samsung S20 + 5G (Gray, 128 GB)" , "https://i5.walmartimages.com/asr/e60556b7-3b2a-4af9-85ac-35a7f1762510_1.950608f2928704dbe95f9630a0981611.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=fffff");
+
+})  
+     
+              
+
+
+
+
+
+
+
+
+
+        </script>
+
+        <script src="/js/main.js"></script>
+        
+
+</body>
+</html>
+
+
+
+
+
+

@@ -41,6 +41,10 @@ var flipkart = [
   { "name": "iphone 11 pro max 256-gb"   ,  "normalPrice" : 131900    , "color" :  "green"       , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": "  https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70    "         },
   { "name": "iphone 11 pro max 256-gb"   ,  "normalPrice" : 131900    , "color" :  "silver"      , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": "  https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/k/6/h/iphone-11-pro-max-64-b-mwhf2hn-a-apple-0-original-imafkg2ftqfvr9sf.jpeg?q=70    "         },
   { "name": "iphone 11 pro max 256-gb"   ,  "normalPrice" : 131990    , "color" :  "gold"        , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": "  https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/e/b/u/iphone-11-pro-max-64-a-mwhg2hn-a-apple-0-original-imafkg2fg3evmhuy.jpeg?q=70    "         },
+  { "name": "iphone SE 2020 64 GB"       ,  "normalPrice" : 42500     , "color" :  "red"        , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": "https://rukminim1.flixcart.com/image/416/416/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmfxhcrpsb.jpeg?q=70      "         },
+  { "name": "iphone SE 2020 128 GB"      ,  "normalPrice" : 47800     , "color" :  "white"        , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": "https://rukminim1.flixcart.com/image/416/416/k9loccw0/mobile/6/b/z/apple-iphone-se-mxd12hn-a-original-imafrcqfsuzwa3dz.jpeg?q=70      "         },
+  { "name": "iphone SE 2020 256 GB"      ,  "normalPrice" : 58300     , "color" :  "black"        , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": "https://rukminim1.flixcart.com/image/416/416/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjfehbbqgb.jpeg?q=70   "         },
+  
   { "name": "Apple watch series 3 gps 42 mm"            ,  "normalPrice" :  23900    , "color" :  "grey"         , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": " https://rukminim1.flixcart.com/image/416/416/jmi22kw0/smartwatch/y/d/j/mtf32hn-a-apple-original-imaf9ec8ssmfcuxf.jpeg?q=70     "         },
   { "name": "Apple watch-series 3 gps 42 mm"            ,  "normalPrice" :  23900    , "color" :  "silver"       , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": " https://rukminim1.flixcart.com/image/416/416/jmi22kw0/smartwatch/e/x/r/mtf22hn-a-apple-original-imaf9ec8fsyhen73.jpeg?q=70     "         },
   { "name": "apple watch-series 4 gps 40 mm"            ,  "normalPrice" :  40900    , "color" :  "grey"         , "price":  0   ,    "difference": 0    , "percent": 0  , "brand": "f" ,    "linkUrl" :  ""     , "img": " https://rukminim1.flixcart.com/image/416/416/jn4x47k0/smartwatch/n/q/h/mu662hn-a-apple-original-imaf9vcgc2wkz6tp.jpeg?q=70     "         },
@@ -57,7 +61,7 @@ var flipkart = [
 var amazon = [
   { "name": "iPhone 7 Plus (32GB)"          ,  "normalPrice" :  39900       , "color" :  "#efc6c0"        , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/51ilvCMNWCL._SL1024_.jpg  "  },
   { "name": "iPhone 7 Plus (128GB)"         ,  "normalPrice" :  72060       , "color" :  "#efc6c0"        , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/51ilvCMNWCL._SL1024_.jpg "  },
-  { "name": "iPhone X (256GB)"              ,  "normalPrice" :  80000       , "color" :  "silver"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/51jpxxd1lNL._SL1024_.jpg"  },
+  { "name": "iPhone X (256GB)"              ,  "normalPrice" :  1           , "color" :  "silver"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/51jpxxd1lNL._SL1024_.jpg"  },
   { "name": "iPhone Xs (256GB)"             ,  "normalPrice" : 109400       , "color" :  "silver"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/61uajhVzLQL._SL1024_.jpg"  },
   { "name": "iPhone Xs (256GB)"             ,  "normalPrice" : 103900       , "color" :  "grey"           , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/61lUCIu2O4L._SL1024_.jpg"  },
   { "name": "iPhone Xs (256GB)"             ,  "normalPrice" : 103900       , "color" :  "gold"           , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/61E3bh882vL._SL1024_.jpg"  },                       
@@ -81,7 +85,7 @@ var amazon = [
   { "name": "Apple Watch Series 4 (GPS + Cellular, 40mm)"    ,  "normalPrice" :  44999       , "color" :  "steel"        , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/61B3buW1qqL._SL1000_.jpg"  },
   { "name": "Apple Watch Series 4 (GPS + Cellular, 44mm)"    ,  "normalPrice" :  52900       , "color" :  "grey"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/516H6EsVu2L._SY679_.jpg"  },
   { "name": "Apple Watch Series 4 (GPS + Cellular, 44mm)"    ,  "normalPrice" :  71900       , "color" :  "steel"        , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/51Btmcf4FEL._SL1000_.jpg"  },
-  { "name": "Apple Watch Series 4 (GPS, 44mm)"               ,  "normalPrice" :  43900       , "color" :  "grey"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/516H6EsVu2L._SY679_.jpg"  },
+  { "name": "Apple Watch Series 4 (GPS, 44mm)"               ,  "normalPrice" :  1       , "color" :  "grey"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/516H6EsVu2L._SY679_.jpg"  },
   { "name": "iPad (10.2-inch, Wi-Fi, 32GB)"                  ,  "normalPrice" :  29900       , "color" :  "gery"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/71TJA%2BsJv2L._SX679_.jpg"  },
   { "name": "iPad (10.2-inch, Wi-Fi, 32GB)"                  ,  "normalPrice" :  29900       , "color" :  "grey"         , "price": 0    ,    "difference": 0    , "percent": 0  , "brand": "a" ,    "linkUrl" :  ""     , "img": "  https://images-na.ssl-images-amazon.com/images/I/71TJA%2BsJv2L._SX679_.jpg"  },     
 
@@ -131,15 +135,16 @@ function dataFinder(phonesListIndex, jsonDataIndex , listName, fileFormat ) {
 
 function phoneData(idIndex, sortedPhoneListIndex,listName) {
   document.getElementById('phone'+idIndex).innerHTML =  listName[sortedPhoneListIndex].name  ;
-  document.getElementById('price'+idIndex).innerHTML = "Price: " + listName[sortedPhoneListIndex].price  ;
+  document.getElementById('price'+idIndex).innerHTML = "Price: " + listName[sortedPhoneListIndex].price    + "<br><s class="+"beforePrice"+">  " + listName[sortedPhoneListIndex].normalPrice+"</s>"  ;
   document.getElementById('difference'+idIndex).innerHTML =  listName[sortedPhoneListIndex].percent + "% Off" ;
   document.getElementById('img'+idIndex).src =  listName[sortedPhoneListIndex].img  ;
   document.getElementById('linkBtn'+idIndex).href =  listName[sortedPhoneListIndex].linkUrl  ;
   document.getElementById('color'+idIndex).style.backgroundColor =  listName[sortedPhoneListIndex].color  ;
   if (listName[sortedPhoneListIndex].brand == "f"){
-      document.getElementById('brand'+idIndex).src =  "https://c7.uihere.com/files/946/191/806/flipkart-e-commerce-logo-bangalore-chief-executive-others.jpg"  ;
+      document.getElementById('brand'+idIndex).src =  "/img/flipart.png"  ;
   } else if (listName[sortedPhoneListIndex].brand == "a") {
-      document.getElementById('brand'+idIndex).src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTEJIZEPPaGHPK2nb5aHP2sUKw8LYwoJD6zjw&usqp=CAU'
+      document.getElementById('brand'+idIndex).src =  "/img/amazon.png"  ;
+      
   }
 
 }
@@ -150,13 +155,13 @@ function phoneData(idIndex, sortedPhoneListIndex,listName) {
 
 ///flipkart
 
-fetch('/json/flipkart.json')
+fetch('/json/india/flipkart.json')
 .then(res => res.json())
 .then((json) => {
   
 
   var i = 0 ;
-  for (i = 0; i < 48; i++) {
+  for (i = 0; i < 51; i++) {
   
 
     dataFinder(i, i, flipkart , json)  ;
@@ -175,16 +180,16 @@ fetch('/json/flipkart.json')
   // data of name , price and difference
  
      
-  phoneData(3, 47, flipkart); 
-  phoneData(5, 46, flipkart); 
-  phoneData(7, 45, flipkart); 
-  phoneData(9, 44, flipkart); 
-  phoneData(11, 43, flipkart);
-  phoneData(12, 42, flipkart);
-  phoneData(14, 41, flipkart);
-  phoneData(16, 40, flipkart);
-  phoneData(18, 39, flipkart);
-  phoneData(20, 37, flipkart);
+  phoneData(2, 50, flipkart); 
+  phoneData(4, 49, flipkart); 
+  phoneData(6, 48, flipkart); 
+  phoneData(8, 47, flipkart); 
+  phoneData(10, 46, flipkart);
+  phoneData(12, 45, flipkart);
+  phoneData(14, 44, flipkart);
+  phoneData(16, 43, flipkart);
+  phoneData(18, 42, flipkart);
+  phoneData(20, 41, flipkart);
 
   
   
@@ -203,7 +208,7 @@ fetch('/json/flipkart.json')
 
 
 
-fetch('/json/amazon_in.json')
+fetch('/json/india/amazon_in.json')
 .then(res => res.json())
 .then((json) => {
 
@@ -252,10 +257,12 @@ function dataFinderAmazon(phonesListIndex, jsonDataIndex , listName, fileFormat 
 
   // if there is error check if links is declared in json file 
 
-  var a = 0 ;
-  for (a = 0; a < 2; a++) {
   
-    dataFinderAmazon(a,a, amazon, json); 
+  var i = 0 ;
+  for (i = 0; i < 29; i++) {
+  
+
+    dataFinderAmazon(i,i, amazon, json); 
   }
 
 
@@ -276,16 +283,16 @@ function dataFinderAmazon(phonesListIndex, jsonDataIndex , listName, fileFormat 
     
 
   phoneData(1,  28,amazon);
-  phoneData(2,  27,amazon);
+  phoneData(3,  27,amazon);
   
 
-  phoneData(4,  26,amazon);
+  phoneData(5,  26,amazon);
   
-  phoneData(6,  25,amazon);
+  phoneData(7,  25,amazon);
   
-  phoneData(8,  24,amazon);
+  phoneData(9,  24,amazon);
   
-  phoneData(10, 23, amazon);
+  phoneData(11, 23, amazon);
 
   phoneData(13, 22, amazon);
   phoneData(15, 21, amazon);

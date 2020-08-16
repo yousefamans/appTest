@@ -7,7 +7,8 @@
   },
   {
    "link": "https://www.amazon.com/Samsung-Hybrid-SIM-SM-G980F-Unlocked-Smartphone/dp/B084GQ3KYM/ref=sr_1_22?dchild=1&keywords=samsung+s20&qid=1595683798&sr=8-22",
-   "name": "Samsung Galaxy S20 (4G) Dual/Hybrid-SIM 128GB SM-G980F/DS (GSM Only | No CDMA) Factory Unlocked 4G/LTE Smartphone - International Version (Cosmic Grey)"
+   "name": "Samsung Galaxy S20 (4G) Dual/Hybrid-SIM 128GB SM-G980F/DS (GSM Only | No CDMA) Factory Unlocked 4G/LTE Smartphone - International Version (Cosmic Grey)",
+   "price": "$.47"
   },
   {
    "link": "https://www.amazon.com/Samsung-Unlocked-Fingerprint-Recognition-Long-Lasting/dp/B082XY23D5/ref=sr_1_1?dchild=1&keywords=samsung+s20&qid=1595683798&sr=8-1",
@@ -76,7 +77,8 @@
   },
   {
    "link": "https://www.amazon.com/Samsung-SM-N960F-DS-6-4-inches-Unlocked/dp/B07GNHMZ3N/ref=sr_1_23?dchild=1&keywords=samsung+note+10&qid=1595684268&sr=8-23",
-   "name": "Samsung Galaxy Note 9 (SM-N960F/DS) 6GB / 128GB (Ocean Blue) 6.4-inches LTE Dual SIM (GSM ONLY, NO CDMA) Factory Unlocked - International Stock No Warranty"
+   "name": "Samsung Galaxy Note 9 (SM-N960F/DS) 6GB / 128GB (Ocean Blue) 6.4-inches LTE Dual SIM (GSM ONLY, NO CDMA) Factory Unlocked - International Stock No Warranty",
+   "price": "$.47"
   },
   {
    "link": "https://www.amazon.com/Samsung-SM-G973F-Unlocked-Smartphone-International/dp/B07NXVM3DG/ref=sr_1_9?dchild=1&keywords=samsung+s10&qid=1595684634&sr=8-9",
@@ -448,31 +450,38 @@
   },
   {
    "link": "https://www.amazon.com/Original-tel%C3%A9fono-Snapdragon-Pantalla-Tecnolog%C3%ADa/dp/B07XVS3QG2/ref=sr_1_1?dchild=1&keywords=oppo+reno&qid=1595686990&sr=8-1",
-   "name": "Original Oppo Reno 2 8GB+128GB Mobile Phone Snapdragon 730G Octa Core NFC 48MP Camera VOOC 3.0 AMOLED Screen Fingerprint 5X Zoom OIS Support Google by-（Real Star Technology） (Navy Blue)"
+   "name": "Original Oppo Reno 2 8GB+128GB Mobile Phone Snapdragon 730G Octa Core NFC 48MP Camera VOOC 3.0 AMOLED Screen Fingerprint 5X Zoom OIS Support Google by-（Real Star Technology） (Navy Blue)",
+   "price": "$474.00"
   },
   {
    "link": "https://www.amazon.com/Unlocked-OPPO-Reno2-Green-Storage/dp/B07XBYF7DL/ref=sr_1_4?dchild=1&keywords=oppo+reno2&qid=1595687056&sr=8-4",
-   "name": "New Unlocked OPPO Reno2 F (Lake Green, 8GB RAM, 128GB Storage)"
+   "name": "New Unlocked OPPO Reno2 F (Lake Green, 8GB RAM, 128GB Storage)",
+   "price": "$1.00"
   },
   {
    "link": "https://www.amazon.com/Original-Smartphone-Android-Snapdragon-Technology%EF%BC%89/dp/B08381R769/ref=sr_1_1?dchild=1&keywords=oppo+reno+3&qid=1595687121&sr=8-1",
-   "name": "Original Oppo Reno 3 Pro 5G Smartphone 8G+128GB 6.5\" AMOLED Android 10 Snapdragon 765G Octa Core 4025mAh VOOC 4.0 48.0MP OTG NFC Support Google by-（Real Star Technology） (Blue 8+128G)"
+   "name": "Original Oppo Reno 3 Pro 5G Smartphone 8G+128GB 6.5\" AMOLED Android 10 Snapdragon 765G Octa Core 4025mAh VOOC 4.0 48.0MP OTG NFC Support Google by-（Real Star Technology） (Blue 8+128G)",
+   "price": "$637.00"
   },
   {
    "link": "https://www.amazon.com/gooplayer-Smartphone-Android-Snapdragon-4025mAh/dp/B0894K3P37/ref=sr_1_8?dchild=1&keywords=oppo+reno+3&qid=1595687121&sr=8-8",
-   "name": "gooplayer for Oppo Reno 3 Pro 5G Smartphone 8G+128GB 6.5\" AMOLED Android 10 Snapdragon 765G Octa Core 4025mAh VOOC 4.0 48.0MP OTG (Blue 8GB+128GB)"
+   "name": "gooplayer for Oppo Reno 3 Pro 5G Smartphone 8G+128GB 6.5\" AMOLED Android 10 Snapdragon 765G Octa Core 4025mAh VOOC 4.0 48.0MP OTG (Blue 8GB+128GB)",
+   "price": "$651.00"
   },
   {
    "link": "https://www.amazon.com/35minutes-Panoramic-Sliding-Stealth-Cameras/dp/B07WMTHRKM/ref=sr_1_4?dchild=1&keywords=oppo+find+x&qid=1595687209&sr=8-4",
-   "name": "Oppo Find X 8GB+256GB Super VOOC 35minutes Full Charge 6.42 inches Panoramic Arc Screen Sliding Stealth 3D Cameras 25MP 4G Mobile Phone (Red)"
+   "name": "Oppo Find X 8GB+256GB Super VOOC 35minutes Full Charge 6.42 inches Panoramic Arc Screen Sliding Stealth 3D Cameras 25MP 4G Mobile Phone (Red)",
+   "price": "$669.00"
   },
   {
    "link": "https://www.amazon.com/35minutes-Panoramic-Sliding-Stealth-Cameras/dp/B07GLYJXCL/ref=sr_1_8?dchild=1&keywords=oppo+find+x&qid=1595687209&sr=8-8",
-   "name": "OPPO Find X 8GB+256GB Super VOOC 35minutes Full Charge 6.42 inches Panoramic Arc Screen Sliding Stealth 3D Cameras 25MP 4G Mobile Phone (Glacier Blue)"
+   "name": "OPPO Find X 8GB+256GB Super VOOC 35minutes Full Charge 6.42 inches Panoramic Arc Screen Sliding Stealth 3D Cameras 25MP 4G Mobile Phone (Glacier Blue)",
+   "price": "$646.00"
   },
   {
    "link": "https://www.amazon.com/gooplayer-Version-Snapdragon-SuperVooc-Fingerprint/dp/B089DBFMW4/ref=sr_1_43?dchild=1&keywords=oppo+find+x&qid=1595687209&sr=8-43",
-   "name": "gooplayer for Oppo Find X2 5G Version Snapdragon 865 SuperVooc 48.0MP Android 10.0 Mobile Phone 8GB RAM 256GB ROM 65W Charger 6.7\" 120HZ Screen Fingerprint (Orange, 8G+128G)"
+   "name": "gooplayer for Oppo Find X2 5G Version Snapdragon 865 SuperVooc 48.0MP Android 10.0 Mobile Phone 8GB RAM 256GB ROM 65W Charger 6.7\" 120HZ Screen Fingerprint (Orange, 8G+128G)",
+   "price": "$990.00"
   },
   {
    "link": "https://www.amazon.com/Original-Snapdragon-Warranty-Cellphone-Technology%EF%BC%89/dp/B085N8L5FS/ref=sr_1_21?dchild=1&keywords=oppo&qid=1595686839&sr=8-21",
@@ -642,11 +651,14 @@
    "price": "$399.99"
   },
   {
-   "link": "https://www.amazon.com/Google-Pixel-Factory-Unlohttps://www.amazon.com/Google-GA01187-US-Pixel-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_2?dchild=1&keywords=google+pixel+4&qid=1595688171&sr=8-2cked-Smartphone/dp/B07RL859ZT/ref=sr_1_16?dchild=1&keywords=google+pixel&qid=1595688072&sr=8-16"
+   "link": "https://www.amazon.com/Google-GA01187-US-Pixel-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_2?dchild=1&keywords=google+pixel+4&qid=1595688171&sr=8-2cked-Smartphone/dp/B07RL859ZT/ref=sr_1_16?dchild=1&keywords=google+pixel&qid=1595688072&sr=8-16",
+   "price": "$549.99"
   },
   {
    "link": "https://www.amazon.com/Google-Unlocked-Smartphone-Unlimited-Accessories/dp/B086BCF5WQ/ref=sr_1_3?dchild=1&keywords=google+pixel+4&qid=1595688171&sr=8-3",
-   "name": "Google - Pixel 4 Unlocked Android Smartphone 64GB Cell Phone Unlimited Cloud Storage (Black) AT&T/T-Mobile/Verizon W/ 69.99 Hesvap 7 in 1 Accessories Bundle"
+   "name": "Google - Pixel 4 Unlocked Android Smartphone 64GB Cell Phone Unlimited Cloud Storage (Black) AT&T/T-Mobile/Verizon W/ 69.99 Hesvap 7 in 1 Accessories Bundle",
+   "price": "$1.99"
+   
   },
   {
    "link": "https://www.amazon.com/Google-Pixel-XL-Unlocked-Renewed/dp/B0824BR684/ref=sr_1_4?dchild=1&keywords=google+pixel+4&qid=1595688171&sr=8-4",

@@ -3,16 +3,20 @@
 <!DOCTYPE html>
 <html>
 
+<
 <head>
-        <title>iphone 8</title>
+        <title>Samsung Note 10</title>
         <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <script src="/js/india/element.js"></script>
 
 </head>
 <body>
 
 
+        
         <div class="nav">
-                <a href="/index.html">Home</a>
+                <a href="/templates/india.html"><img class="back" src="https://img.icons8.com/fluent/48/000000/back.png"/></a>
+
         </div>
 
         <p class="search-results">Search results</p>
@@ -37,66 +41,7 @@
       
         <script >
 
-function elementJS(ids) {
-        var aTag = document.createElement("a");
-        aTag.innerHTML = "name";
-        
-        aTag.setAttribute("class","link-txt");
-        aTag.setAttribute("id","name"+ids);
 
-        document.getElementById('box'+ids).appendChild(aTag);
-
-        var price_value = document.createElement("p");
-        price_value.innerHTML = "price";
-        price_value.setAttribute("class","price-value");
-        price_value.setAttribute("id","price"+ids);
-        document.getElementById('box'+ids).appendChild(price_value);
-
-        var normalPrice_Ptag = document.createElement("p");
-        
-        normalPrice_Ptag.setAttribute("class","normal-price");
-        normalPrice_Ptag.setAttribute("id","normal-price"+ids);
-        document.getElementById('box'+ids).appendChild(normalPrice_Ptag);
-
-        var discount_Tag = document.createElement("p");
-        
-        discount_Tag.setAttribute("class","discount");
-        discount_Tag.setAttribute("id","discount"+ids);
-        document.getElementById('box'+ids).appendChild(discount_Tag);
-
-
-        var brand_img = document.createElement("img");
-        
-        brand_img.setAttribute("class","brand");
-        brand_img.setAttribute("id","brand"+ids);
-        document.getElementById('box'+ids).appendChild(brand_img);
-
-        var divImg = document.createElement("div");
-        divImg.setAttribute("class", "img-box");
-        divImg.setAttribute("id", "img-box-"+ids);
-        document.getElementById('box'+ids).appendChild(divImg);
-
-        // phone img
-        var img = document.createElement("img");
-        img.setAttribute("class","phone-img");
-        img.setAttribute("id", "img"+ids);
-        document.getElementById("img-box-"+ids).appendChild(img);
-
-
-        var divLink = document.createElement("div");
-        divLink.setAttribute("class", "link-button");
-        divLink.setAttribute("id", "link-button-"+ids);
-
-        document.getElementById('box'+ids).appendChild(divLink);
-
-        var aLink = document.createElement("a");
-        aLink.innerHTML = "visit website";
-        
-
-        aLink.setAttribute("id","link"+ids);
-
-        document.getElementById('link-button-'+ids).appendChild(aLink);
-}
 
 var i =1;
 for (i=1 ; i<16; i++){
@@ -105,50 +50,6 @@ for (i=1 ; i<16; i++){
 
 
 
-function phoneData(idIndex, jsonDataIndex ,fileFormat, brand ,normalPrice, name ,img) {
-  
-  
-  var JsonData = fileFormat.links[jsonDataIndex].price ;
-  
-  var JsonDataInt = JsonData.slice(1);
-  var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
-  var differenceInPrice = normalPrice - ReplaceComma ;
-
-  var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
-
-  var roundedPercentValue = Math.round(percentValue) ;
-
-  if (brand == "a") {
-      document.getElementById('price'+idIndex).innerHTML = JsonData.slice(0,-3)  ;
-      document.getElementById('brand'+idIndex).src = "###########https://cdn.clipart.email/997b00858c031976500e16c850dd3626_transparent-background-amazonin-logo-png_350-350.png"  ;
-      document.getElementById("brand"+idIndex).style.top = "80px";
-
-   
-  }
-
-  if (brand == "f"){
-     document.getElementById('price'+idIndex).innerHTML = fileFormat.links[jsonDataIndex].price  ;    
-     document.getElementById('brand'+idIndex).src = "#######https://cdn.freebiesupply.com/logos/large/2x/flipkart-logo-png-transparent.png"  ;
-
-        
-  }
-  
-  document.getElementById('discount'+idIndex).innerHTML = roundedPercentValue + "% <span class="+"off"+">Off </span>" ;
-  document.getElementById('normal-price'+idIndex).innerHTML = "<s>"+normalPrice+" ₹</s>" ;
-  document.getElementById('img'+idIndex).src = img ;
-  document.getElementById('link'+idIndex).href = fileFormat.links[jsonDataIndex].link ;
-  document.getElementById('name'+idIndex).innerHTML = name ;
-
-  if (roundedPercentValue == 0) {
-        
-        document.getElementById("normal-price"+idIndex).style.display = "none" ;
-        document.getElementById("discount"+idIndex).style.display = "none" ;
-  }
-  
-  
-  
-
-}
 
 fetch('/json/india/amazon_in.json')
   .then(res => res.json())

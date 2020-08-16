@@ -1,0 +1,802 @@
+
+<!DOCTYPE html>
+
+<html>
+
+
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        <title>phones</title>
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+        
+
+
+
+    </head>    
+
+    <body>
+
+
+    	
+
+
+    	
+        
+
+
+    	 <div class="nav">
+    	 	<p>heloo</p>
+    	 </div>
+
+    	 
+
+
+        <div class="country-dropdown">
+        	<p>Choose your country</p>
+    	 <div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle country-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://img.icons8.com/cute-clipart/64/000000/spain-2.png"/>
+		    Spain
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		  	<a class="dropdown-item" href="/index.html"><img src="https://img.icons8.com/color/48/000000/globe--v1.png"/><span class="country-name">Worldwide</span></a>
+		    <a class="dropdown-item" href="/templates/india.html"><img class="india" src="https://img.icons8.com/color/48/000000/india.png"/><span class="country-name">India</span></a>
+		    
+		    <a class="dropdown-item" href="/usa/usa.html"><img src="https://img.icons8.com/cute-clipart/64/000000/usa.png"/><sapn class="country-name">Usa</sapn></a>
+		  </div>
+		</div>
+
+	</div>
+
+        
+    	 
+ 
+
+
+
+    	
+  
+  
+  
+
+      
+
+  
+
+		<div class="welcome">
+			<h1 class="welcome-txt">Track prices of your fovourite gizmos !!</h1>
+
+
+			<form autocomplete="off" >
+				<div class="search-components">
+					
+				
+			  <div class="autocomplete" >
+
+			    <input class="input" id="myInput" type="text" name="myCountry" placeholder="Search">
+			  </div>
+			  <div class="search-btn-div">
+			    <a class="search-btn-aTag" onclick="subs()" href="#"><img class="search-icon" src="https://img.icons8.com/cotton/64/000000/search--v1.png"/></a>	
+			  </div>
+
+			</div>
+			  
+			</form>
+
+
+
+		<!-- top deals -->
+
+		<h3 class="top-deals-txt">Top Deals</h3>
+
+		<div class="top-deals">
+
+			<div class="card" style="width: 18rem;">
+			  <img id="img1" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title"    id="phone1">iphone 11</h5>
+			    <p class="card-text"      id="price1">Price: $7</p>
+			    <p class="card-text"      id="difference1">25%</p>
+			    <div class="colorDot" id="color1">
+			    	<p>.</p>
+			    </div>
+
+			    <a id="linkBtn1" href="#" class="btn btn-primary">View<img  id="brand1" class="brandlogo" src=""></a>
+			  </div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+			  <img  id="img2" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title"    id="phone2">iphone 11</h5>
+			    <p class="card-text"      id="price2">Price: $799</p>
+                <p class="card-text"      id="difference2"></p>
+                <div class="colorDot" id="color2">
+			    	<p>.</p>
+			    </div>
+
+			    <a  id="linkBtn2" href="#" class="btn btn-primary">View<img  id="brand2" class="brandlogo" src=""></a>
+			  </div>
+			</div>
+
+		</div>
+
+
+		<div class="top-deals">
+
+			<div class="card" style="width: 18rem;">
+			  <img  id="img3"  src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title"    id="phone3">iphone 11</h5>
+			    <p class="card-text"      id="price3">Price: $799</p>
+			    <p class="card-text"      id="difference3"></p>
+			    <div class="colorDot" id="color3">
+			    	<p>.</p>
+			    </div>
+
+			    <a id="linkBtn3" href="#" class="btn btn-primary">View<img  id="brand3" class="brandlogo" src=""></a>
+			  </div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+			  <img   id="img4" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title"    id="phone4">iphone 11</h5>
+			    <p class="card-text"      id="price4">Price: $7</p>
+			    <p class="card-text"      id="difference4"></p>
+			    <div class="colorDot" id="color4">
+			    	<p>.</p>
+			    </div>
+
+			    <a  id="linkBtn4" href="#" class="btn btn-primary">View<img  id="brand4" class="brandlogo" src=""></a>
+			  </div>
+			</div>
+
+		</div>
+		
+
+
+		<div class="top-deals">
+
+			<div class="card" style="width: 18rem;">
+			  <img  id="img5"  src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title"      id="phone5">iphone 11</h5>
+			    <p class="card-text"        id="price5">Price: $7</p>
+			    <p class="card-text"        id="difference5"></p>
+			    <div class="colorDot" id="color5">
+			    	<p>.</p>
+			    </div>
+                <a  id="linkBtn5" href="#" class="btn btn-primary">View<img  id="brand5" class="brandlogo" src=""></a>
+			  </div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+			  <img  id="img6" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title"      id="phone6">iphone 11</h5>
+			    <p class="card-text"      id="price6">Price: $7</p>
+			    <p class="card-text"      id="difference6"></p>
+			    <div class="colorDot" id="color6">
+			    	<p>.</p>
+			    </div>
+			    <a  id="linkBtn6" href="#" class="btn btn-primary">View<img  id="brand6" class="brandlogo" src=""></a>
+			  </div>
+			</div>
+
+		</div>
+
+		
+
+		<div id="showMoreTopDeals">		
+
+			<div class="top-deals">
+
+				<div class="card" style="width: 18rem;">
+				  <img id="img7" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"     id="phone7">iphone 11</h5>
+				    <p class="card-text"      id="price7">Price: $7</p>
+			        <p class="card-text"      id="difference7"></p>
+			        <div class="colorDot" id="color7">
+			    	    <p>.</p>
+			        </div>
+				    <a  id="linkBtn7" href="#" class="btn btn-primary">View<img  id="brand7" class="brandlogo" src=""></a>
+				  </div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+				  <img id="img8" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"      id="phone8">iphone 11</h5>
+				    <p class="card-text"      id="price8">Price: $7</p>
+			        <p class="card-text"      id="difference8"></p>
+			        <div class="colorDot" id="color8">
+			    	    <p>.</p>
+			        </div>
+				    <a  id="linkBtn8" href="#" class="btn btn-primary">View<img  id="brand8" class="brandlogo" src=""></a>
+				  </div>
+				</div>
+
+			</div>
+			
+
+
+			<div class="top-deals">
+
+				<div class="card" style="width: 18rem;">
+				  <img  id="img9" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"      id="phone9">iphone 11</h5>
+				    <p class="card-text"      id="price9">Price: $7</p>
+			        <p class="card-text"      id="difference9"></p>
+			        <div class="colorDot" id="color9">
+			    	    <p>.</p>
+			        </div> 
+				    <a id="linkBtn9" href="#" class="btn btn-primary">View<img  id="brand9" class="brandlogo" src=""></a>
+				  </div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+				  <img   id="img10" src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"       id="phone10">iphone 11</h5>
+				    <p class="card-text"      id="price10">Price: $7</p>
+			        <p class="card-text"      id="difference10"></p>
+			        <div class="colorDot" id="color10">
+			    	    <p>.</p>
+			        </div>
+				    <a id="linkBtn10" href="#" class="btn btn-primary">View<img  id="brand10" class="brandlogo" src=""></a>
+				  </div>
+				</div>
+
+			</div>
+
+			<div class="show-more-btn2">
+			  <a href="topdeals.html" class="show-atag" >show more</a>
+		    </div>
+
+		</div>
+
+		<div class="show-btn" id="showMoreBtn">
+			<a  onclick="showMoreS()" class="show-atag"  >Show More</a>
+		</div>
+
+		
+
+		
+
+		
+
+		<!-- Apple deals  --->
+
+		<a href="/templates/apple/apple.html"><h3 class="brand">Apple</h3></a>
+        
+        <div class="apple">
+
+		   <div class="top-deals">
+
+				<div class="card" style="width: 18rem;">
+				  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"     id="phone11">iphone 11</h5>
+				    <p class="card-text"      id="price11">Price: $7</p>
+			        <p class="card-text"      id="difference11"></p>
+				    <a href="#" class="btn btn-primary">View</a>
+				  </div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+				  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"      id="phone12">iphone 11</h5>
+				    <p class="card-text"      id="price12">Price: $7</p>
+			        <p class="card-text"      id="difference12"></p>
+				    <a href="#" class="btn btn-primary">View</a>
+				  </div>
+				</div>
+
+			</div>
+
+
+			<div class="top-deals">
+
+				<div class="card" style="width: 18rem;">
+				  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"      id="phone13">iphone 11</h5>
+				    <p class="card-text"      id="price13">Price: $7</p>
+			        <p class="card-text"      id="difference13"></p>
+				    <a href="#" class="btn btn-primary">View</a>
+				  </div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+				  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"     id="phone14">iphone 11</h5>
+				    <p class="card-text"      id="price14">Price: $7</p>
+			        <p class="card-text"      id="difference14"></p>
+				    <a href="#" class="btn btn-primary">View</a>
+				  </div>
+				</div>
+
+			</div>
+
+			<div class="top-deals">
+
+				<div class="card" style="width: 18rem;">
+				  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"       id="phone15">iphone 11</h5>
+				    <p class="card-text"      id="price15">Price: $7</p>
+			        <p class="card-text"      id="difference15"></p>
+				    <a href="#" class="btn btn-primary">View</a>
+				  </div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+				  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title"      id="phone16">iphone 11</h5>
+				    <p class="card-text"      id="price16">Price: $7</p>
+			        <p class="card-text"      id="difference16"></p>
+				    <a href="#" class="btn btn-primary">View</a>
+				  </div>
+				</div>
+
+			</div>
+
+		</div>	
+
+		<div class="show-btn" id="showMoreBtn">
+					<a  onclick="showMoreS()" class="show-atag"  >Show More</a>
+	    </div>
+
+
+
+			<!-- Samsund -->
+
+			<a href="C:\Users\user\Documents\BestDeals\templates\apple\samsung.html"><h3 class="brand">Samung</h3></a>
+
+			<div class="samsung">
+
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"      id="phone17">iphone 11</h5>
+					    <p class="card-text"      id="price17">Price: $7</p>
+			            <p class="card-text"      id="difference17"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"      id="phone18">iphone 11</h5>
+					    <p class="card-text"      id="price18">Price: $7</p>
+			            <p class="card-text"      id="difference18"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+				</div>
+
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"     id="phone19">iphone 11</h5>
+					    <p class="card-text"      id="price19">Price: $7</p>
+			            <p class="card-text"      id="difference19"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"      id="phone20">iphone 11</h5>
+					    <p class="card-text"      id="price20">Price: $7</p>
+			            <p class="card-text"      id="difference20"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+				</div>
+
+
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"     id="phone21">iphone 11</h5>
+					    <p class="card-text"      id="price21">Price: $7</p>
+			            <p class="card-text"      id="difference21"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"      id="phone22">iphone 11</h5>
+					    <p class="card-text"      id="price22">Price: $7</p>
+			            <p class="card-text"      id="difference22"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+				</div>
+
+				<div class="show-btn" id="showMoreBtn">
+					<a  onclick="showMoreS()" class="show-atag"  >Show More</a>
+				</div>
+
+
+		    </div>
+
+
+			<!--- Xiaomi -->
+
+			<a href="C:\Users\user\Documents\BestDeals\templates\apple\samsung.html"><h3 class="brand">Xiaomi</h3></a>
+
+
+			<div class="xiaomi">
+
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"    id="phone23">iphone 11</h5>
+					    <p class="card-text"      id="price23">Price: $7</p>
+				        <p class="card-text"      id="difference23"></p>
+					    <a href="#" class="btn btn-primary">View</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"    id="phone24">iphone 11</h5>
+					    <p class="card-text"      id="price24">Price: $7</p>
+				        <p class="card-text"      id="difference24"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"      id="phone25">iphone 11</h5>
+					    <p class="card-text"      id="price25">Price: $7</p>
+				        <p class="card-text"      id="difference25"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"       id="phone26">iphone 11</h5>
+					    <p class="card-text"      id="price26">Price: $7</p>
+				        <p class="card-text"      id="difference26"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"        id="phone27">iphone 11</h5>
+					    <p class="card-text"      id="price27">Price: $7</p>
+				        <p class="card-text"      id="difference27"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"     id="phone28">iphone 11</h5>
+					    <p class="card-text"      id="price28">Price: $7</p>
+				        <p class="card-text"      id="difference28"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="show-btn" id="showMoreBtn">
+					<a  onclick="showMoreS()" class="show-atag" >Show More</a>
+			</div>	
+
+			<!-- One Plus -->
+			<a  href="C:\Users\user\Documents\BestDeals\templates\apple\samsung.html"><h3 class="brand">One Plus</h3></a>
+
+
+			<div class="oneplus">
+
+
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"    id="phone29">iphone 11</h5>
+					    <p class="card-text"      id="price29">Price: $7</p>
+				        <p class="card-text"      id="difference29"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"    id="phone30">iphone 11</h5>
+					    <p class="card-text"      id="price30">Price: $7</p>
+				        <p class="card-text"      id="difference30"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"  id="phone31">iphone 11</h5>
+					    <p class="card-text"      id="price31">Price: $7</p>
+				        <p class="card-text"      id="difference31"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"   id="phone32">iphone 11</h5>
+					    <p class="card-text"      id="price32">Price: $7</p>
+				        <p class="card-text"      id="difference32"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+        </div>
+
+           <div class="show-btn" id="showMoreBtn">
+					<a  onclick="showMoreS()" class="show-atag"  >Show More</a>
+			</div>
+
+
+
+			<!-- Iphone se 2020 -->
+
+			<!-- One Plus -->
+			<a  href="C:\Users\user\Documents\BestDeals\templates\apple\samsung.html"><h3 class="brand">Iphone se 2020</h3></a>
+
+
+			<div class="iphone-se-2020">
+
+
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"    id="phone33">iphone 11</h5>
+					    <p class="card-text"      id="price33">Price: $7</p>
+				        <p class="card-text"      id="difference33"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"    id="phone34">iphone 11</h5>
+					    <p class="card-text"      id="price34">Price: $7</p>
+				        <p class="card-text"      id="difference34"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+				<div class="top-deals">
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"  id="phone35">iphone 11</h5>
+					    <p class="card-text"      id="price35">Price: $7</p>
+				        <p class="card-text"      id="difference35"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <img src="https://res.cloudinary.com/bajajdigital/image/upload/v1590052725/ProductImages/bhli9wrc3w6qntwwt2zo.png" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"   id="phone36">iphone 11</h5>
+					    <p class="card-text"      id="price36">Price: $7</p>
+				        <p class="card-text"      id="difference36"></p>
+					    <a href="#" class="btn btn-primary">learn more</a>
+					  </div>
+					</div>
+
+				</div>
+
+
+
+
+
+				<h5>Select other country</h5>
+
+				<div class="country-list"> 
+					
+					   <a class="dropdown-item" href="#"><img class="india" src="https://img.icons8.com/color/48/000000/india.png"/><p class="country-name">India</p></a>
+
+					   <a class="dropdown-item" href="#"><img src="https://img.icons8.com/cute-clipart/64/000000/spain-2.png"/><p class="country-name">Spain</p></a>
+					    <a class="dropdown-item" href="#"><img src="https://img.icons8.com/cute-clipart/64/000000/usa.png"/><p class="country-name">Usa</p></a>
+				</div>
+
+
+
+
+
+
+
+
+
+			
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			
+		
+		
+		
+        
+			
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+		<script src="/js/spain/app.js"></script>
+
+		
+
+		
+		
+
+
+    
+    
+ 
+    </body>
+    
+</html> 	
+
+
+

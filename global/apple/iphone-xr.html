@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>iphone Xr</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+</head>
+<body>
+
+
+       <div class="nav">
+                <a href="/index.html"><img class="back" src="https://img.icons8.com/fluent/48/000000/back.png"/></a>
+        </div>
+
+        <p class="search-results">Search results</p>
+
+
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+        <div id="box10" class="box"></div>
+        <div id="box11" class="box"></div>
+        <div id="box12" class="box"></div>
+       
+        
+
+
+
+
+        <script >
+
+function elementJS(ids) {
+        var aTag = document.createElement("a");
+        aTag.innerHTML = "name";
+        
+        aTag.setAttribute("class","link-txt");
+        aTag.setAttribute("id","name"+ids);
+
+        document.getElementById('box'+ids).appendChild(aTag);
+
+        var price_value = document.createElement("p");
+        price_value.innerHTML = "price";
+        price_value.setAttribute("class","price-value");
+        price_value.setAttribute("id","price"+ids);
+        document.getElementById('box'+ids).appendChild(price_value);
+
+        var normalPrice_Ptag = document.createElement("p");
+        
+        normalPrice_Ptag.setAttribute("class","normal-price");
+        normalPrice_Ptag.setAttribute("id","normal-price"+ids);
+        document.getElementById('box'+ids).appendChild(normalPrice_Ptag);
+
+        var discount_Tag = document.createElement("p");
+        
+        discount_Tag.setAttribute("class","discount");
+        discount_Tag.setAttribute("id","discount"+ids);
+        document.getElementById('box'+ids).appendChild(discount_Tag);
+
+
+        var brand_img = document.createElement("img");
+        
+        brand_img.setAttribute("class","brand");
+        brand_img.setAttribute("id","brand"+ids);
+        document.getElementById('box'+ids).appendChild(brand_img);
+
+
+
+
+
+        var divImg = document.createElement("div");
+        divImg.setAttribute("class", "img-box");
+        divImg.setAttribute("id", "img-box-"+ids);
+        document.getElementById('box'+ids).appendChild(divImg);
+
+        // phone img
+        var img = document.createElement("img");
+        img.setAttribute("class","phone-img");
+        img.setAttribute("id", "img"+ids);
+        document.getElementById("img-box-"+ids).appendChild(img);
+
+
+        var divLink = document.createElement("div");
+        divLink.setAttribute("class", "link-button");
+        divLink.setAttribute("id", "link-button-"+ids);
+
+        document.getElementById('box'+ids).appendChild(divLink);
+
+        var aLink = document.createElement("a");
+        aLink.innerHTML = "visit website";
+        
+
+        aLink.setAttribute("id","link"+ids);
+
+        document.getElementById('link-button-'+ids).appendChild(aLink);
+
+        document.getElementById("box"+ids).style.height = "280px";
+        document.getElementById("box"+ids).style.width = "780px";
+        document.getElementById("img-box-"+ids).style.width = "220px";
+        document.getElementById("img-box-"+ids).style.height = "280px";
+        document.getElementById("img"+ids).style.height = "250px";
+}
+
+var i =1;
+for (i=1 ; i<13; i++){
+        elementJS(i);
+}
+
+
+
+
+function phoneData(idIndex, jsonDataIndex ,fileFormat, brand ,normalPrice, name ,img) {
+  
+  document.getElementById('price'+idIndex).innerHTML = fileFormat.links[jsonDataIndex].price.slice(0,-3)  ;
+  document.getElementById('normal-price'+idIndex).innerHTML = "<s>$ "+normalPrice+"</s>" ;
+  var JsonData = fileFormat.links[jsonDataIndex].price ;
+  
+  if (brand == "a") {
+   var JsonDataInt = JsonData.slice(1);
+   var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
+   var differenceInPrice = normalPrice - ReplaceComma ;
+
+   var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+   var roundedPercentValue = Math.round(percentValue) ;
+   document.getElementById('brand'+idIndex).src = "/img/amazon.jpg"  ;
+
+
+   
+  }
+
+
+   if (brand == "e") {
+   var JsonDataInt = JsonData.slice(4);
+   var ReplaceComma = parseFloat(JsonDataInt.replace(/,/g, ''));
+   var differenceInPrice = normalPrice - ReplaceComma ;
+
+   var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+   var roundedPercentValue = Math.round(percentValue) ;
+   document.getElementById('brand'+idIndex).src = "/img/ebay.jpg"  ;
+   document.getElementById('brand'+idIndex).style.width = "90px"  ;
+   document.getElementById('brand'+idIndex).style.left = "440px"  ;
+   
+
+
+   if(JsonData.slice(0,2) == "US"){
+     document.getElementById('price'+idIndex).innerHTML = JsonData.slice(3,-3)  ;
+     document.getElementById('normal-price'+idIndex).innerHTML = "<s>$ "+normalPrice+"</s>" ; 
+   
+   }else if (JsonData.slice(0,3) == "GBP"){
+     document.getElementById('price'+idIndex).innerHTML = " £ " + JsonData.slice(4,-3)  ;
+     document.getElementById('normal-price'+idIndex).innerHTML = "<s> £"+normalPrice+"</s>" ;
+   
+   }else if (JsonData.slice(0,3) == "EUR"){
+      document.getElementById('price'+idIndex).innerHTML =  JsonData.slice(4,-3) + " €" ;
+      document.getElementById('normal-price'+idIndex).innerHTML = "<s> "+normalPrice+" €</s>" 
+   }
+
+ }
+
+  if (brand == "w"){
+      var ReplaceComma = parseFloat(JsonData.replace(/,/g, ''));
+      var differenceInPrice = normalPrice - ReplaceComma ;
+
+      var percentValue = (parseInt(differenceInPrice) / normalPrice ) * 100   ;
+
+      var roundedPercentValue = Math.round(percentValue) ;
+
+      document.getElementById('price'+idIndex).innerHTML = "$" + fileFormat.links[jsonDataIndex].price  ;
+      document.getElementById('brand'+idIndex).src = "/img/walmart.jpg"  ;
+      document.getElementById('brand'+idIndex).style.width = "80px"  ;
+
+
+  }
+
+
+    
+
+ 
+  
+  
+  
+  document.getElementById('discount'+idIndex).innerHTML = roundedPercentValue  + "% <span class="+"off"+">Off </span>" ;
+  
+  document.getElementById('img'+idIndex).src = img ;
+  document.getElementById('link'+idIndex).href = fileFormat.links[jsonDataIndex].link ;
+  document.getElementById('name'+idIndex).innerHTML = name ;
+
+  if (roundedPercentValue == 0) {
+        
+        document.getElementById("normal-price"+idIndex).style.display = "none" ;
+        document.getElementById("discount"+idIndex).style.display = "none" ;
+  }
+
+
+  
+}
+
+
+
+
+
+fetch('/json/usa/apple_amazon_usa.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(6, 13 , json , "a" ,  599 , "iPhone Xr (Blue , 64 GB)" , "https://m.media-amazon.com/images/I/51n24DedexL.jpg");
+     phoneData(7, 14 , json , "a" ,  599 , "iPhone Xr (Coral, 64 GB)" , "https://m.media-amazon.com/images/I/51cCOStn+rL.jpg");
+     phoneData(8, 15 , json , "a" ,  599 , "iPhone Xr (Yellow, 64 GB)" , "https://m.media-amazon.com/images/I/519Wcu07etL.jpg");
+     phoneData(9, 16 , json , "a" ,  599 , "iPhone Xr (Red, 64 GB)" , "https://m.media-amazon.com/images/I/51YXG1bDM5L.jpg");
+     phoneData(10, 17 , json , "a" ,  599 , "iPhone Xr (White, 64 GB)" , "https://m.media-amazon.com/images/I/51PuFBgBK4L.jpg");
+     phoneData(11, 18 , json , "a" ,  599 , "iPhone Xr (Black, 64 GB)" , "https://m.media-amazon.com/images/I/519KIlHA2wL.jpg");
+     
+
+  })
+
+
+  fetch('/json/global/ebay.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(5, 16 , json ,"e", 699 , "iPhone Xr (Yellow, 64 GB)" , "https://i.ebayimg.com/images/g/IRgAAOSwz2BeNtQE/s-l300.jpg");
+    // phoneData(8, 17 , json ,"e", 0 , "iPhone Xr (All colors, 128/256 GB)" , "");
+     phoneData(12, 18 , json ,"e", 730 , "iPhone Xr AT&T (Black, 64 GB)" , "https://i.ebayimg.com/images/g/3nwAAOSwFINePBFp/s-l640.jpg");
+/*
+     phoneData(10, 19 , json ,"e", 0 , "iPhone Xr (, 64 GB)" , "");    
+     phoneData(15, 20 , json ,"e", 0 , "iPhone Xr (, 64 GB)" , "");   
+*/
+  })  
+
+  fetch('/json/usa/walmart.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(1, 12 , json ,"w", 749 , "iPhone Xr (Red, 64 GB)" , "https://i5.walmartimages.com/asr/60c5fd13-536b-4020-8949-c33935ecd838_1.9a379404d79058b0c400c634f385f9d6.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff");
+
+     phoneData(2, 13 , json ,"w", 749 , "iPhone Xr (Black, 64 GB)" , "https://i5.walmartimages.com/asr/d74414a9-9cc4-4753-a292-146916bf9a1d_1.150a51fd76f5a45fb317e980eaa36855.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff");
+
+     phoneData(3, 14 , json ,"w", 18 , "iPhone Xr (Black, 64 GB)" , "https://i5.walmartimages.com/asr/d74414a9-9cc4-4753-a292-146916bf9a1d_1.150a51fd76f5a45fb317e980eaa36855.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff");
+
+     phoneData(4, 15 , json ,"w", 749 , "iPhone Xr (Black, 64 GB)" , "https://i5.walmartimages.com/asr/d74414a9-9cc4-4753-a292-146916bf9a1d_1.150a51fd76f5a45fb317e980eaa36855.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff");
+
+
+
+  })  
+       
+                
+
+
+
+
+
+
+
+
+
+        </script>
+
+        <script src="/js/main.js"></script>
+        
+
+</body>
+</html>
+
+
+
+
+
+

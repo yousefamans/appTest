@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>fghj</title>
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+        <title>iphone 11 pro</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+
 </head>
 <body>
 
-	 <div id="box1" class="box"></div>
+
+
+
+        <div class="nav">
+                <a href="/index.html">Home</a>
+        </div>
+
+        <p class="search-results">Search results</p>
+
+
+        <div id="box1" class="box"></div>
         <div id="box2" class="box"></div>
         <div id="box3" class="box"></div>
         <div id="box4" class="box"></div>
@@ -21,7 +34,77 @@
         <div id="box13" class="box"></div>
         <div id="box14" class="box"></div>
         <div id="box15" class="box"></div>
+
+      <script src="test.js"></script>
+        <script >
+
+
+var i =1;
+for (i=1 ; i<16; i++){
+        elementJS(i);
+}
+
+
+
+
+
+fetch('/json/india/amazon_in.json')
+  .then(res => res.json())
+  .then((json) => {
+
+
+     phoneData(1, 13 , json , "a" ,  106600 , "iPhone 11 Pro (Space Grey, 64 GB)" , "https://images-na.ssl-images-amazon.com/images/I/61itOh%2BJe8L._SL1024_.jpg");
+     phoneData(2, 14 , json , "a" ,  106600 , "iPhone 11 Pro (Midnignt Green, 128 GB)" , "https://images-na.ssl-images-amazon.com/images/I/61itOh%2BJe8L._SL1024_.jpg");
+     
+     
+     phoneData(3, 15 , json , "a" ,  121300 , "iPhone 11 Pro (Space Grey, 256 GB)" , "https://images-na.ssl-images-amazon.com/images/I/61m6DjujESL._SL1024_.jpg");
+     
+     
+
+    
+    
+
+
+     
+  })
+
+  fetch('/json/india/flipkart.json')
+  .then(res => res.json())
+  .then((json) => {
+
+      phoneData(4,29 , json , "f" ,  106600 , "iPhone 11 Pro (Silver, 64 GB)" , "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/k/6/h/iphone-11-pro-max-64-b-mwhf2hn-a-apple-0-original-imafkg2ftqfvr9sf.jpeg?q=70");
+      phoneData(5, 30 , json , "f" , 106600 , "iPhone 11 Pro (Gold, 64 GB)" , "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/e/b/u/iphone-11-pro-max-64-a-mwhg2hn-a-apple-0-original-imafkg2fg3evmhuy.jpeg?q=70");
+      phoneData(6, 31 , json , "f" , 106600 , "iPhone 11 Pro (Midnight Green, 64 GB)" , "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70");
+      phoneData(7, 32 , json , "f" , 121300 , "iPhone 11 Pro (Midnight Green, 256 GB)" , "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70");
+       phoneData(8, 33 , json , "f" , 121300 , "iPhone 11 Pro (Silver, 256 GB)" , "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/k/6/h/iphone-11-pro-max-64-b-mwhf2hn-a-apple-0-original-imafkg2ftqfvr9sf.jpeg?q=70");
+        phoneData(9, 34 , json , "f" ,121300 , "iPhone 11 Pro (Gold, 256 GB)" , "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/e/b/u/iphone-11-pro-max-64-a-mwhg2hn-a-apple-0-original-imafkg2fg3evmhuy.jpeg?q=70");
         
-        <script src="tet.js"></script>
+  
+
+        
+
+  })  
+       
+                
+
+
+
+
+
+
+
+
+
+        </script>
+
+        
+        
+
 </body>
 </html>
+
+
+
+
+
+

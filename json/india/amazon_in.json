@@ -132,7 +132,8 @@
   },
   {
    "link": "https://www.amazon.in/Apple-Watch-GPS-44mm-Space-Aluminium/dp/B07JB8DWGT?ref_=ast_sto_dp",
-   "name": "Apple Watch Series 4 (GPS, 44mm) - Space Grey Aluminium Case with Black Sport Band"
+   "name": "Apple Watch Series 4 (GPS, 44mm) - Space Grey Aluminium Case with Black Sport Band",
+   "price": "₹ 1.00"
   },
   {
    "link": "https://www.amazon.in/Apple-10-2-inch-Wi-Fi-Cellular-128GB/dp/B07XVL6PW6?ref_=ast_sto_dp",
@@ -231,27 +232,34 @@
   },
   {
    "link": "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B07SCPB574/ref=sr_1_1?dchild=1&keywords=a10s&qid=1594738600&s=electronics&sr=1-1",
-   "name": "Samsung Galaxy A10s (Green, 2GB RAM, 32GB Storage)"
+   "name": "Samsung Galaxy A10s (Green, 2GB RAM, 32GB Storage)",
+   "price": "₹ 1.00"
+
   },
   {
    "link": "https://www.amazon.in/Test-Exclusive-614/dp/B07HGJJ559/ref=sr_1_2?dchild=1&fst=as%3Aoff&qid=1594738689&refinements=p_89%3ASamsung&rnid=3837712031&s=electronics&sr=1-2",
-   "name": "Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)"
+   "name": "Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)",
+   "price": "₹ 1.00"
   },
   {
    "link": "https://www.amazon.in/Test-Exclusive-667/dp/B07HGH8D2R/ref=sr_1_3?dchild=1&fst=as%3Aoff&qid=1594738689&refinements=p_89%3ASamsung&rnid=3837712031&s=electronics&sr=1-3",
-   "name": "Samsung Galaxy M21 (Raven Black, 4GB RAM, 64GB Storage)"
+   "name": "Samsung Galaxy M21 (Raven Black, 4GB RAM, 64GB Storage)",
+   "price": "₹ 1.00"  
   },
   {
    "link": "https://www.amazon.in/Test-Exclusive-669/dp/B07HGH8ML7/ref=sr_1_4?dchild=1&fst=as%3Aoff&qid=1594738689&refinements=p_89%3ASamsung&rnid=3837712031&s=electronics&sr=1-4",
-   "name": "Samsung Galaxy M21 (Raven Black, 6GB RAM, 128GB Storage)"
+   "name": "Samsung Galaxy M21 (Raven Black, 6GB RAM, 128GB Storage)",
+   "price": "₹ 1.00"
   },
   {
    "link": "https://www.amazon.in/Test-Exclusive-668/dp/B07HGH88GL/ref=sr_1_5?dchild=1&fst=as%3Aoff&qid=1594738689&refinements=p_89%3ASamsung&rnid=3837712031&s=electronics&sr=1-5",
-   "name": "Samsung Galaxy M21 (Midnight Blue, 6GB RAM, 128GB Storage)"
+   "name": "Samsung Galaxy M21 (Midnight Blue, 6GB RAM, 128GB Storage)",
+   "price": "₹ 1.00"   
   },
   {
    "link": "https://www.amazon.in/Test-Exclusive-631/dp/B07HGJ7WM6/ref=sr_1_1?dchild=1&keywords=m30s&qid=1594738820&s=electronics&sr=1-1",
-   "name": "Samsung Galaxy M30s (Blue, 6GB RAM, 128GB Storage)"
+   "name": "Samsung Galaxy M30s (Blue, 6GB RAM, 128GB Storage)",
+   "price": "₹ 1.00"   
   },
   {
    "link": "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B086KDZGVK/ref=sr_1_2?dchild=1&keywords=m11&qid=1594738884&s=electronics&sr=1-2",
@@ -265,7 +273,8 @@
   },
   {
    "link": "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B07KXCK8S6/ref=sr_1_3?dchild=1&keywords=s10&qid=1594739012&s=electronics&sr=1-3",
-   "name": "Samsung Galaxy S10 (Prism Blue, 8GB RAM, 128GB Storage)"
+   "name": "Samsung Galaxy S10 (Prism Blue, 8GB RAM, 128GB Storage)",
+   "price": "₹ 1.00"  
   },
   {
    "link": "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B07KXBVLRJ/ref=sr_1_4?dchild=1&keywords=s10&qid=1594739012&s=electronics&sr=1-4",
