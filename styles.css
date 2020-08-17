@@ -5,6 +5,10 @@
 
 }
 
+body{
+  background-color: pink;
+}
+
 .country-dropdown{
   background-color: #fff2e6;
   color: white;
